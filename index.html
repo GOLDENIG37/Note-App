@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="notepad-container">
+        <div class="operation-container">
+            <div class="left-container">
+                <i class="fa-solid fa-less-than"></i>
+                <p>Folders</p>
+            </div>
+            <div class="right-container">
+                <i class="fa-solid fa-pen-to-square" id="createButton"></i>
+            </div>
+
+        </div>
+
+        <div class="notes-container">
+            <h1>Notes</h1>
+        </div>
+
+        <div class="input-container">
+            <i class="fas fa-search"></i>
+            <i class="fa-solid fa-microphone"></i>
+            <input type="text" id="search-input" placeholder="Search">
+          </div>
+
+          
+    </div>
+
+    <div class="resources-section" id="resources-section">
+        <!-- <div class="resource">
+            <div class="name-of-website">
+                <h3>Name of Heading</h3>
+                <i class="fa fa-trash"></i>
+            </div>
+
+            <div class="description-of-website">
+                <p>This website is for researching on UX Design Principles. I love the way research is done on the website</p>
+            </div>
+        </div> -->
+
+    </div>
+
+     <div class="modal-container" id="modal-container">
+        <form class="modal-form" id="modal-form">
+            <div class="top">
+                <div class="top-left">
+                    <i class="fa-solid fa-less-than" id="close-modal"></i>
+                    <p>Notes</p>
+                </div>
+                 
+                <div class="top-right">
+                    <i class="fa-arrow-up-from-square"></i>
+                    <i class="fa-solid fa-circle-ellipsis"></i>
+                    <button type="submit" id="noteButton" class="noteButton">Done</button>
+                </div>
+            </div>
+            <div class="text-area-note">
+                
+                <input type="text" name="heading" id="heading" placeholder="e.g. Heading">
+                <textarea name="text" id="textarea" placeholder="Enter Note" cols="30" rows="10"></textarea>
+        </form>
+        </div>
+        </div>
+    
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

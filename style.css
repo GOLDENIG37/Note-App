@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300;400;500;600;700&family=Yantramanav&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+body{
+    background-color: #f3f2f2;
+}
+
+.notepad-container{
+    width: 50%;
+    height: auto;
+    padding: 2rem 3rem;
+    margin: 1rem auto;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.operation-container{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.left-container p{
+    font-size: 1.5rem;
+    color: rgb(207, 207, 43);
+}
+.left-container i{
+    font-size: 1.5rem;
+    color: rgb(207, 207, 43);
+    cursor: pointer;
+}
+
+.right-container i{
+    font-size: 1.5rem;
+    color: rgb(207, 207, 43);
+    cursor: pointer;  
+}
+
+.notes-container{
+    width: 100%;
+    height: auto;
+    padding: 0 1.5rem;
+}
+.notes-container h1{
+    font-size: 2.5rem;
+}
+
+.input-container{
+    width: 100%;
+    height: auto; 
+    position: relative;
+}
+.input-container input{
+    width: 100%;
+    height: auto;
+    padding: 0.2rem 0 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    background-color: rgb(231, 230, 230);
+    border-radius: 0.3rem;
+}
+.fa-search{
+    position: absolute;
+    top: 20%;
+    left: 4px;
+    color: #999;
+    font-size: 16px;
+    
+}
+.fa-microphone{
+    position: absolute;
+    top: 20%;
+    right: 4px;
+    color: #999;
+    font-size: 16px;
+
+}
+
+.resources-section{
+    width: 50%;
+    height: auto;
+    background-color: #f8f8f8;
+    border: none;
+    margin: 1rem auto;
+    padding: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 1rem;
+    /* flex-wrap: wrap; */
+    /* row-gap: 1rem; */
+}
+
+.resource{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.name-of-website{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-of-website h3{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(207, 207, 43);
+}
+
+.name-of-website i{
+    cursor: pointer;
+    color: #8f8f95;
+}
+
+.description-of-website{
+    width: 100%;
+    height: auto;
+}
+
+.description-of-website p{
+    font-size: 0.8rem;
+    color: #444445;
+}
+
+.modal-container{
+    width: 50%;
+    height: auto;
+    padding: 2rem 3rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    visibility: hidden;
+}
+
+.modal-container-visible{
+    width: 50%;
+    height: auto;
+    padding: 2rem 3rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    visibility: visible;
+}
+
+.top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.2rem;
+    justify-content: start;
+    align-items: center;
+}
+.top-left i{
+    font-size: 1.2rem;
+    color: rgb(207, 207, 43);
+    cursor: pointer;
+}
+.top-left p{
+    font-size: 1rem;
+    color: rgb(207, 207, 43);
+}
+
+.top-right{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.2rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.noteButton{
+    color: rgb(207, 207, 43) ;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.text-area-note{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.text-area-note input{
+    padding: 0.3rem 0.5rem;
+    border: 2px solid #f2f1f1;
+    outline: none;
+    border-radius: 0.5rem;
+}
+textarea{
+    padding: 0.3rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
